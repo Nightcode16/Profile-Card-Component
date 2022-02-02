@@ -1,0 +1,131 @@
+/*https://fonts.google.com/specimen/Kumbh+Sans)*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 700 1.8rem "Kumbh Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+  --dark-cyan: hsl(185, 75%, 39%);
+  --white: hsl(0, 0%, 100%);
+  --dark-gray: hsl(0, 0%, 59%);
+ }
+
+body {
+  min-height: 100vh;
+  background-color: var(--dark-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 33rem;
+  height: 37rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.cover img {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.profile {
+  position: relative;
+  bottom: 5rem;
+}
+
+.profile img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 0.5rem solid var(--white);
+}
+
+.profile p {
+  margin: 1rem;
+}
+
+.age,
+.country {
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+.age {
+  margin-left: 1rem;
+}
+
+.country {
+  font-size: 1.4rem;
+}
+
+hr,
+.profile-info {
+  position: relative;
+  bottom: 3rem;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2.5rem;
+}
+
+.followers-p,
+.likes-p,
+.photos-p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.top-circle {
+  position: absolute;
+  top: -60rem;
+  left: -60rem;
+  z-index: -1;
+}
+
+.bottom-circle {
+  position: absolute;
+  bottom: -60rem;
+  right: -60rem;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1200px) {
+  .bottom-circle {
+    bottom: -60rem;
+    right: -30rem;
+  }
+
+  .top-circle {
+    top: -60rem;
+    left: -30rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 1.8rem;
+}
